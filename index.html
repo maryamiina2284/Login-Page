@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Screen</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="./images/logo.jpeg" alt="Logo">
+            <h1>Logo</h1>
+        </div>
+        <h2>Welcome Back!</h2>
+        <form id="login-form">
+            <input type="email" id="email" placeholder="Student ID" required>
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Password" required>
+                <i class="fas fa-eye" id="togglePassword"></i>
+            </div>
+            <div class="forgot-password-container">
+                <a href="#" class="forgot-password" id="forgot-password-link">Forgot Password?</a>
+            </div>
+            <div class="social-login">
+                <div class="divider">
+                    <hr class="line">
+                    <span>Or</span>
+                    <hr class="line">
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/login" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://accounts.google.com/signin" target="_blank"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+            <p>Not a Member? <a href="#">Sign Up Now</a></p>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div id="forgot-password-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Reset Password</h2>
+            <form id="forgot-password-form">
+                <input type="email" id="reset-email" placeholder="Enter your email" required>
+                <button type="submit">Send Reset Link</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
